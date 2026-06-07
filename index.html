@@ -1,1 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thái Huy | Profile</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:Arial, sans-serif;
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px 20px;
+      background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    }
+    .hero{
+      max-width:850px;
+    }
+    .badge{
+      display:inline-block;
+      padding:8px 16px;
+      background:rgba(255,255,255,.12);
+      border-radius:999px;
+      margin-bottom:20px;
+      color:#dbeafe;
+    }
+    h1{
+      font-size:58px;
+      letter-spacing:2px;
+      margin-bottom:15px;
+    }
+    .typing{
+      font-size:22px;
+      color:#bfdbfe;
+      margin-bottom:25px;
+    }
+    .desc{
+      font-size:18px;
+      color:#e5e7eb;
+      max-width:700px;
+      margin:0 auto 35px;
+    }
+    .btns{
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .btn{
+      padding:14px 26px;
+      border-radius:10px;
+      font-weight:bold;
+      transition:.3s;
+    }
+    .primary{background:#2563eb}
+    .secondary{border:1px solid #93c5fd}
+    .btn:hover{transform:translateY(-3px);opacity:.9}
 
+    section{
+      padding:80px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+    .title{
+      text-align:center;
+      font-size:36px;
+      margin-bottom:15px;
+    }
+    .subtitle{
+      text-align:center;
+      color:#cbd5e1;
+      margin-bottom:45px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+    .card{
+      background:#111827;
+      padding:28px;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow:0 10px 30px rgba(0,0,0,.2);
+      transition:.3s;
+    }
+    .card:hover{
+      transform:translateY(-6px);
+      border-color:#3b82f6;
+    }
+    .card h3{
+      color:#60a5fa;
+      margin-bottom:12px;
+    }
+    .card p, li{
+      color:#d1d5db;
+    }
+    ul{padding-left:18px}
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1.5fr;
+      gap:35px;
+      align-items:center;
+    }
+    .avatar{
+      width:230px;
+      height:230px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#2563eb,#38bdf8);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:70px;
+      font-weight:bold;
+      margin:auto;
+      box-shadow:0 0 40px rgba(59,130,246,.5);
+    }
+
+    .contact-box{
+      text-align:center;
+      background:linear-gradient(135deg,#1e40af,#0f172a);
+      padding:45px 20px;
+      border-radius:24px;
+    }
+    .contact-links{
+      margin-top:25px;
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px 20px;
+      color:#94a3b8;
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+
+    @media(max-width:768px){
+      h1{font-size:42px}
+      .about{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <div class="badge">Website chính thức: thaihuy.id.vn</div>
+    <h1>THÁI HUY</h1>
+    <div class="typing">Digital Creator • Công nghệ • Thương hiệu cá nhân</div>
+    <p class="desc">
+      Xin chào, tôi là Thái Huy. Tôi xây dựng website này để giới thiệu hồ sơ cá nhân,
+      chia sẻ dự án, kỹ năng và kết nối với đối tác, khách hàng, bạn bè trong lĩnh vực công nghệ và kinh doanh số.
+    </p>
+    <div class="btns">
+      <a href="#about" class="btn primary">Xem hồ sơ</a>
+      <a href="#contact" class="btn secondary">Liên hệ ngay</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="title">Giới thiệu</h2>
+  <p class="subtitle">Thông tin cá nhân và định hướng phát triển</p>
+
+  <div class="about">
+    <div class="avatar">TH</div>
+    <div class="card">
+      <h3>Về tôi</h3>
+      <p>
+        Tôi là Thái Huy, người yêu thích công nghệ, sáng tạo nội dung và ứng dụng các giải pháp số
+        vào công việc thực tế. Mục tiêu của tôi là xây dựng hình ảnh cá nhân chuyên nghiệp,
+        đáng tin cậy và dễ kết nối.
+      </p>
+      <br>
+      <p>
+        Website này là nơi tổng hợp thông tin, kỹ năng, dự án và các kênh liên hệ chính thức của tôi.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">Kỹ năng & Dịch vụ</h2>
+  <p class="subtitle">Những lĩnh vực tôi quan tâm và phát triển</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Thiết kế Website</h3>
+      <p>Xây dựng website cá nhân, landing page, giới thiệu doanh nghiệp, tối ưu giao diện trên điện thoại.</p>
+    </div>
+
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <p>Hỗ trợ xây dựng thương hiệu cá nhân, nội dung quảng bá, SEO cơ bản và kênh truyền thông số.</p>
+    </div>
+
+    <div class="card">
+      <h3>AI & Automation</h3>
+      <p>Ứng dụng AI vào công việc, tự động hóa quy trình, tiết kiệm thời gian và nâng cao hiệu quả.</p>
+    </div>
+
+    <div class="card">
+      <h3>Tư vấn số hóa</h3>
+      <p>Định hướng giải pháp công nghệ phù hợp cho cá nhân, cửa hàng nhỏ và doanh nghiệp vừa.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">Dự án nổi bật</h2>
+  <p class="subtitle">Một số định hướng và sản phẩm đang phát triển</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>thaihuy.id.vn</h3>
+      <p>Website profile cá nhân chuyên nghiệp, dùng để giới thiệu thông tin, kỹ năng và liên hệ.</p>
+    </div>
+
+    <div class="card">
+      <h3>Landing Page</h3>
+      <p>Thiết kế trang giới thiệu dịch vụ, sản phẩm hoặc thương hiệu cá nhân với giao diện hiện đại.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ứng dụng AI</h3>
+      <p>Nghiên cứu và triển khai các công cụ AI phục vụ học tập, công việc và kinh doanh.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">Thành tựu & Mục tiêu</h2>
+  <p class="subtitle">Không ngừng học hỏi, phát triển và tạo giá trị</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Tư duy phát triển</h3>
+      <ul>
+        <li>Luôn học hỏi công nghệ mới</li>
+        <li>Tập trung vào tính thực tế</li>
+        <li>Xây dựng hình ảnh chuyên nghiệp</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Mục tiêu</h3>
+      <ul>
+        <li>Phát triển thương hiệu cá nhân</li>
+        <li>Mở rộng kết nối hợp tác</li>
+        <li>Ứng dụng công nghệ vào cuộc sống</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-box">
+    <h2 class="title">Liên hệ</h2>
+    <p class="subtitle">
+      Kết nối với tôi để trao đổi công việc, hợp tác hoặc tư vấn giải pháp số.
+    </p>
+
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:your@email.com">Email</a>
+      <a class="btn secondary" href="tel:0123456789">Gọi điện</a>
+      <a class="btn secondary" href="#">Facebook</a>
+      <a class="btn secondary" href="#">Zalo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 CONG TY TNHH CONG NGHE DARKTECH — All Rights Reserved.
+</footer>
+
+</body>
+</html>
